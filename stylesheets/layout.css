@@ -1,0 +1,286 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+body {
+	background: url(../images/noise.png);
+	font: 15px/25px "ff-tisa-web-pro",Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+.container { 
+	box-shadow: 0 50px 150px 0 rgba(0,0,0,0.1);
+}
+*/
+#main{
+	position: relative;
+	width: 100%;
+}
+.container {
+	position: relative;
+}
+
+#profile, #about, #work, .about {
+	text-align: center;
+}
+
+.picture {
+	width: 100%;
+	border: 1px solid black;
+}
+
+section{
+	position: relative;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+h1, h2, h3, h4, h5 {
+	color: #000;
+	font-family: "din-condensed-web","Arial Narrow",Arial,sans-serif;
+	font-weight: normal;
+	text-transform: uppercase; 
+	line-height: 38px;
+}
+
+.link {
+	color: #E56233;
+}
+
+.heading span:first-child {
+
+}
+
+.subtitle {
+	display: block;
+	font: 10px/18px "ff-tisa-web-pro",Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-shadow: none;
+}
+
+.border {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ddd;
+}
+
+#resume .column {
+	
+}
+
+#resume section {
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.work .subtitle {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+
+/*skills*/
+#skills .in div {
+	margin-bottom: 20px;
+}
+
+#skills span {
+	color: #fff;
+}
+
+#skills .in .bar {
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+#skills .in .green, #skills .in .orange, #skills .in .blue {
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.level_10 .bar, .level_9 .bar, .level_8 .bar, .level_7 .bar, .level_2 .bar{
+	background-color: #ddd;
+}
+
+.level_10 .bar .green, .level_9 .bar .green, .level_8 .bar .green, .level_7 .bar .green, .level_2 .bar .green{
+	background-color: #27ae60;
+}
+
+.level_10 .bar .orange, .level_9 .bar .orange, .level_8 .bar .orange, .level_7 .bar .orange, .level_2 .bar .orange{
+	background-color: #e67e22;
+}
+
+.level_10 .bar .blue, .level_9 .bar .blue, .level_8 .bar .blue, .level_7 .bar .blue, .level_2 .bar .blue{
+	background-color: #2980b9;
+}
+
+.level_10 .bar div span, .level_9 .bar div span, .level_8 .bar div span, .level_7 .bar div span, .level_2 .bar div span{
+	margin-left: 50%;
+}
+/*skills*/
+
+.footer {
+	background: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+	
+	@media only screen and (min-width: 959px) {
+		#main {
+			overflow: hidden;
+			min-height: 100%;
+			width: calc(100% - 200px);
+			margin-left: 200px;
+			display: inline;
+			float: left;
+		}
+
+		#header {
+			width: 200px;
+			position: fixed;
+			background-color: #fff;
+			float: left;
+			text-align: center;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			z-index: 10000;
+			overflow: hidden;
+			-webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
+			box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, .7);
+		}
+
+		#side {
+			width: 240px;
+			padding: 78px 30px 0 30px;
+			float: right;
+		}
+
+		#side #nav {
+			width: 50%;
+			margin-top: 60px;
+			margin-left: 45%;
+			overflow: hidden;
+		}
+
+		#side {
+			position: relative;
+			top: 50%;
+			margin-top: 200px;
+		}
+
+		#nav li {
+			margin-top: 20%;
+		}
+
+		#main {
+			
+		}
+	}
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		#header {
+			display: none;
+		}
+		.imgBackground {
+			background: url(../images/rohit-dhiman-devils-lake.jpg);
+			background-position: 0 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			min-height: 400px;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -5;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#header {
+			display: none;
+		}
+
+		h3 {
+			text-align: center;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#header {
+			display: none;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#header {
+			display: none;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
